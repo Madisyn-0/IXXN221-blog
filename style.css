@@ -15,10 +15,14 @@ body {
 }
 
 .top-nav {
-    background-color: slategrey;
+    background-color: #b99795;
     padding:20px;
 }
 
 .top-nav a {
     color: white;
+}
+
+.page-title h1 {
+    color:  #867178;
 }
