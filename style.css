@@ -1,28 +1,56 @@
 body {
 	margin: 0;
 	padding: 0;
-    background-color: #eee9f8;
+    background-color: #DEE2E1;
     font-family: Arial, sans-serif;
     text-align: center;
+    color: 444c57;
 }
 
 .container {
-    padding-top: 40px;
-  width: 80vw;
-  margin: auto;
-  background-color: white;
-  padding-bottom: ;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    width: 80vw;
+    margin: auto;
+    background-color: white;
+}
+
+.blog-entry {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 70vw;
+    margin: auto;
+    background-color: #627b82;
+    color: white;
 }
 
 .top-nav {
     background-color: #b99795;
-    padding:20px;
+    padding:30px;
+    padding-bottom: 40px;
 }
 
 .top-nav a {
     color: white;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .page-title h1 {
-    color:  #867178;
+    color:  #444C57;
+}
+
+p {
+    padding: 30px;
+    text-align: justify;
+}
+
+h1 {
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.entrys-title {
+    padding-top: 15px;
 }
