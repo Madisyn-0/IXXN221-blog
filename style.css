@@ -4,7 +4,7 @@ body {
     background-color: #DEE2E1;
     font-family: Arial, sans-serif;
     text-align: center;
-    color: 444c57;
+    color: #444c57;
 }
 
 .container {
@@ -22,12 +22,15 @@ body {
     margin: auto;
     background-color: #627b82;
     color: white;
+    -webkit-box-shadow: 5px 4px 8px 1px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 5px 4px 8px 1px rgba(0, 0, 0, 0.21);
+    box-shadow: 5px 4px 8px 1px rgba(0, 0, 0, 0.21);
 }
 
 .top-nav {
-    background-color: #b99795;
+    background-color: #b99795; /* pink */
     padding:30px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 }
 
 .top-nav a {
@@ -35,10 +38,18 @@ body {
     float: left;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.top-nav a:hover{
+	color: #444c57; /* dark blue */
+	text-decoration: underline; /* Hover styles to let people know they can click it */
 }
 
 .page-title h1 {
-    color:  #444C57;
+    color:  #b99795; /* pink */
 }
 
 p {
@@ -48,9 +59,23 @@ p {
 
 h1 {
     padding-bottom: 20px;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .entrys-title {
     padding-top: 15px;
 }
+
+.info-heading {
+    background-color: #e0e5df;
+    color: #444c57;
+    padding: 6px;
+}
+
+/* .date {
+    float: left;
+    background-color: #e0e5df;
+    color: #444C57;
+    padding: 6px;
+    width:100%;
+} */
