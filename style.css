@@ -17,7 +17,6 @@ body {
 
 .blog-entry {
     padding-top: 20px;
-    padding-bottom: 20px;
     width: 70vw;
     margin: auto;
     background-color: #627b82;
@@ -53,8 +52,12 @@ body {
 }
 
 p {
-    padding: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 30px;
     text-align: justify;
+    font-size: 18px;
 }
 
 h1 {
@@ -67,15 +70,32 @@ h1 {
 }
 
 .info-heading {
-    background-color: #e0e5df;
+    width: 100%;
+    height: 40px;
+    background-color: #DEE2E1;
     color: #444c57;
-    padding: 6px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  
+.date {
+    float: right;
+    padding-right: 20px;
+}
+  
+.title {
+    float: left;
+    padding-left: 30px;
+    font-size: 25px;
+    position: relative;
+    top: -15px;
+    color: #b99795; /* pink */
 }
 
-/* .date {
-    float: left;
-    background-color: #e0e5df;
-    color: #444C57;
-    padding: 6px;
-    width:100%;
-} */
+.entry-image {
+    padding-top: 30px;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
