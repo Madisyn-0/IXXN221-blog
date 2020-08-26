@@ -37,6 +37,17 @@ body {
     box-shadow: 5px 4px 8px 1px rgba(0, 0, 0, 0.21);
 }
 
+.blog-entry3 {
+    padding-top: 20px;
+    width: 70vw;
+    margin: auto;
+    background-color: #627b82;
+    color: white;
+    -webkit-box-shadow: 5px 4px 8px 1px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 5px 4px 8px 1px rgba(0, 0, 0, 0.21);
+    box-shadow: 5px 4px 8px 1px rgba(0, 0, 0, 0.21);
+}
+
 .top-nav {
     background-color: #b99795; /* pink */
     padding:30px;
@@ -120,6 +131,7 @@ h1 {
     overflow: hidden;
     align-items: center;
 }
+
 
 
 .row {
