@@ -15,21 +15,27 @@ body {
     background-color: white;
 }
 
-.blog-entry, .blog-entry2 {
+.blog-entry, .blog-entry2, .blog-entry3{
     align-items: center;
-    padding-top: 20px;
+    padding-top: 30px;
     width: 70vw;
     margin: 0 auto;
-    background-color: #627b82;
     color: white;
     -webkit-box-shadow: 5px 4px 8px 1px rgba(0, 0, 0, 0.21);
     -moz-box-shadow: 5px 4px 8px 1px rgba(0, 0, 0, 0.21);
     box-shadow: 5px 4px 8px 1px rgba(0, 0, 0, 0.21);
 }
 
+.blue {
+    background-color: #4e6978;
+}
+
+.pink {
+    background-color: #dbbbb8; /* pink */
+}
 
 .top-nav {
-    background-color: #b99795; /* pink */
+    background-color: #dbbbb8; /* pink */
     padding:30px;
     padding-bottom: 50px;
 }
@@ -37,8 +43,8 @@ body {
 .top-nav a {
     color: white;
     float: left;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 20px;
     font-size: 20px;
     text-decoration: none;
@@ -49,8 +55,9 @@ body {
 	text-decoration: underline; /* Hover styles to let people know they can click it */
 }
 
-.page-title, .name h1 {
-    color:  #b99795; /* pink */
+.page-title, .name h2 {
+    color:  #dbbbb8; /* pink */
+    font-family: 'Arima Madurai', cursive;
 }
 
 p {
@@ -63,41 +70,56 @@ p {
 }
 
 h1 {
-    padding-bottom: 20px;
-    font-size: 40px;
+    padding-bottom: 10px;
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 30px;
 }
 
 .entrys-title {
     padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Arima Madurai', cursive;
 }
 
 .info-heading {
     width: 100%;
-    height: 40px;
+    height: 70px;
     background-color: #DEE2E1;
-    color: #444c57;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    align-items: center;
+    background-color: white;
+    color: #444c57; /* dark blue */
+    justify-content: space-evenly;
   }
+
   
 .date {
+    line-height: 40px;
     float: right;
-    padding-right: 20px; 
+    padding-right: 30px; 
     font-size: 15px;
+    align-self: center;
+    vertical-align: middle;
 }
   
 .title {
+    line-height: 30px;
     float: left;
     padding-left: 30px;
-    font-size: 20px;
-    position: relative;
-    
-    top: -15px;
-    padding-top: 10px;
-    color: #b99795; /* pink */
+    font-size: 25px;
+    font-family: 'Arima Madurai', cursive;
+    vertical-align: middle;
 }
 
+
+.col-blue {
+    color: #4e6978;
+}
+
+.col-pink{
+    color: #dbbbb8; /* pink */
+}
 
 #my-image {
     padding-top: 30px;
@@ -113,7 +135,7 @@ h1 {
     overflow: hidden;
 }
 
-.entry-image2 {
+.entry-image2, .entry-image3{
     padding-top: 30px;
     box-sizing: border-box;
     width: 100%;
@@ -125,12 +147,18 @@ h1 {
     display: inline-grid;
     grid-template-columns: auto auto;
     padding: 10px;
-    align-items: center;
 }
+
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
   
-.grid-item {
+.grid-item, .grid-item2 {
     padding: 10px;
 }
-
-
 
