@@ -26,6 +26,13 @@ body {
     box-shadow: 5px 4px 8px 1px rgba(0, 0, 0, 0.21);
 }
 
+.blog-entry3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 10px;
+    padding-bottom: 20px;
+}
+
 .blue {
     background-color: #4e6978;
 }
@@ -159,10 +166,8 @@ h2 {
 
 
 .grid-container2 {
-    display: grid;
-    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
     padding: 10px;
-    justify-content: space-evenly;
 }
 
   
