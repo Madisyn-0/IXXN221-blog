@@ -33,22 +33,23 @@
     box-shadow: 5px 4px 8px 1px rgba(0, 0, 0, 0.21);
 }
 
+
 .blue { /* changes the blog entry background color */
     background-color: #4e6978;
 }
 
 .pink {  /* changes the blog entry background color */
-    background-color: #dbbbb8; /* pink */
+    background-color: #98A7AC; /* pink */
 }
 
 .top-nav {
-    background-color: #dbbbb8; /* pink */
+    background-color: #CDDAD8; /* pink */
     padding:30px;
     padding-bottom: 50px;
 }
 
 .top-nav a {
-    color: white;
+    color: #444c57;
     float: left;
     padding-left: 30px;
     padding-right: 30px;
@@ -58,13 +59,13 @@
 }
 
 .top-nav a:hover{
-	color: #444c57; /* dark blue */
+	color: white; /* dark blue */
 	text-decoration: underline; /* Hover styles to let people know they can click it */
 }
 
 .page-title, .name h2 {
-    color:  #dbbbb8; /* pink */
-    font-family: 'Arima Madurai', cursive;
+    color:  #98A7AC; /* pink */
+    font-family: 'Nobile', sans-serif;
 }
 
 p {
@@ -95,15 +96,17 @@ h2 {
 .entrys-title {
     padding-top: 15px;
     padding-bottom: 15px;
-    font-family: 'Arima Madurai', cursive;
+    font-family: 'Nobile', sans-serif;
 }
 
 .info-heading {
     width: 100%;
     height: 70px;
+    
     background-color: white;
-    color: #444c57; /* dark blue */
+    color: #444c57;
     justify-content: space-evenly;
+ 
   }
 
   
@@ -121,7 +124,7 @@ h2 {
     float: left;
     padding-left: 30px;
     font-size: 25px;
-    font-family: 'Arima Madurai', cursive;
+    font-family: 'Nobile', sans-serif;
     vertical-align: middle;
 }
 
@@ -131,7 +134,7 @@ h2 {
 }
 
 .col-pink{
-    color: #dbbbb8; /* pink */
+    color: #98A7AC; /* pink */
 }
 
 #my-image {
@@ -143,7 +146,7 @@ h2 {
 .entry-image {
     padding-top: 30px;
     align-self: center;
-    width: 80%;
+    width: 60vw;
     height: auto;
     overflow: hidden;
 }
@@ -236,7 +239,7 @@ h2 {
     
     .page-title, .name h2 {
         color:  #dbbbb8; /* pink */
-        font-family: 'Arima Madurai', cursive;
+        font-family: 'Nobile', sans-serif;
     }
     
     p {
@@ -268,7 +271,7 @@ h2 {
     .entrys-title {
         padding-top: 15px;
         padding-bottom: 15px;
-        font-family: 'Arima Madurai', cursive;
+        font-family: 'Nobile', sans-serif;
     }
     
     .info-heading {
@@ -294,7 +297,7 @@ h2 {
         float: left;
         padding-left: 30px;
         font-size: 22px;
-        font-family: 'Arima Madurai', cursive;
+        font-family: 'Nobile', sans-serif;
         vertical-align: middle;
     }
     
