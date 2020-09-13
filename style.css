@@ -1,5 +1,5 @@
 @media only screen and (min-width: 600px){
-    body {
+body {
 	margin: 0;
 	padding: 0;
     background-color: #DEE2E1;
@@ -16,6 +16,50 @@
     background-color: white;
 }
 
+.top-nav{
+    position: relative;
+    top: -20px;
+    background-color: #CDDAD8; /* light blue */
+    padding:30px;
+    /* padding-bottom: 50px; */
+}
+.month-nav {
+    background-color: #CDDAD8; /* light blue */
+    padding:30px;
+}
+
+.top-nav a{
+    color: #444c57;
+    /* float: left; */
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.month-nav a {
+    color: #444c57;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.top-nav a:hover, .month-nav a:hover{
+	color: white;
+	text-decoration: underline; /* Hover styles to let people know they can click it */
+}
+
+.monthNav a{
+    float: right;
+}
+
+.page-title, .name h2 {
+    color:  #98A7AC; /* pink */
+    font-family: 'Nobile', sans-serif;
+}
 
 .blog-entry3 {
     display: grid;
@@ -39,34 +83,9 @@
 }
 
 .pink {  /* changes the blog entry background color */
-    background-color: #98A7AC; /* pink */
+    background-color: #98A7AC; /* grey blue */
 }
 
-.top-nav {
-    background-color: #CDDAD8; /* pink */
-    padding:30px;
-    padding-bottom: 50px;
-}
-
-.top-nav a {
-    color: #444c57;
-    float: left;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 20px;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-.top-nav a:hover{
-	color: white; /* dark blue */
-	text-decoration: underline; /* Hover styles to let people know they can click it */
-}
-
-.page-title, .name h2 {
-    color:  #98A7AC; /* pink */
-    font-family: 'Nobile', sans-serif;
-}
 
 p {
     padding-left: 40px;
@@ -93,7 +112,7 @@ h2 {
     font-size: 30px;
 }
 
-.entrys-title {
+.month {
     padding-top: 15px;
     padding-bottom: 15px;
     font-family: 'Nobile', sans-serif;
@@ -102,14 +121,11 @@ h2 {
 .info-heading {
     width: 100%;
     height: 70px;
-    
     background-color: white;
     color: #444c57;
     justify-content: space-evenly;
- 
-  }
+}
 
-  
 .date {
     line-height: 40px;
     float: right;
@@ -128,7 +144,6 @@ h2 {
     vertical-align: middle;
 }
 
-
 .col-blue {
     color: #4e6978;
 }
@@ -138,7 +153,6 @@ h2 {
 }
 
 #my-image {
-    padding-top: 40px;
     max-width: 30vw;
     height: auto;
 }
@@ -266,12 +280,6 @@ h2 {
     
     h2 {
         font-size: 27px;
-    }
-    
-    .entrys-title {
-        padding-top: 15px;
-        padding-bottom: 15px;
-        font-family: 'Nobile', sans-serif;
     }
     
     .info-heading {
