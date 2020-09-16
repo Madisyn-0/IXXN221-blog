@@ -23,14 +23,17 @@ body {
     padding:30px;
     /* padding-bottom: 50px; */
 }
+
 .month-nav {
-    background-color: #CDDAD8; /* light blue */
-    padding:30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .top-nav a{
     color: #444c57;
-    /* float: left; */
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 20px;
@@ -39,10 +42,11 @@ body {
 }
 
 .month-nav a {
+    background-color: #CDDAD8;
     color: #444c57;
-    padding-left: 30px;
-    padding-right: 30px;
+    text-align: center;
     padding-bottom: 20px;
+    padding-top: 20px;
     font-size: 20px;
     text-decoration: none;
 }
@@ -52,12 +56,8 @@ body {
 	text-decoration: underline; /* Hover styles to let people know they can click it */
 }
 
-.monthNav a{
-    float: right;
-}
-
 .page-title, .name h2 {
-    color:  #98A7AC; /* pink */
+    color:  #4e6978; /* pink */
     font-family: 'Nobile', sans-serif;
 }
 
