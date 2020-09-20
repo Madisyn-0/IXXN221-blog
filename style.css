@@ -16,20 +16,12 @@ body {
     background-color: white;
 }
 
+/* nav */
 .top-nav{
     position: relative;
     top: -20px;
     background-color: #CDDAD8; /* light blue */
     padding:30px;
-}
-
-.month-nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 60px;
-    padding-left: 60px;
-    padding-right: 60px;
-    
 }
 
 .top-nav a{
@@ -38,6 +30,20 @@ body {
     padding-right: 30px;
     font-size: 20px;
     text-decoration: none;
+}
+
+.top-nav a:hover {
+	color: white;
+	text-decoration: underline; /* Hover styles to let people know they can click it */
+}
+
+/* Months */
+.month-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .month-nav a {
@@ -51,25 +57,42 @@ body {
     border-radius: 20px;
 }
 
-.top-nav a:hover, .month-nav a:hover{
-	color: white;
-	text-decoration: underline; /* Hover styles to let people know they can click it */
+.month-nav a:hover {
+    color: white;
 }
 
+.month {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Nobile', sans-serif;
+    color: #444c57;
+}
+
+/* Main titles */
 .page-title, .name h2 {
     color:  #4e6978; /* pink */
     font-family: 'Nobile', sans-serif;
 }
 
-.blog-entry3 {
-    display: grid;
-    grid-template-columns: 1fr;
+/* Home page */
+.about-me p{
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: justify;
+    font-size: 18px;
 }
 
-.blog-entry, .blog-entry2, .blog-entry3{
+#my-image {
+    max-width: 30vw;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+/* Blog Entries */
+.blog-entry, .blog-entry2{
     align-items: center;
     padding-top: 30px;
-    width: 70vw;
+    width: 60vw;
     margin: 0 auto;
     color: white;
     -webkit-box-shadow: 5px 4px 8px 1px rgba(0, 0, 0, 0.21);
@@ -77,28 +100,19 @@ body {
     box-shadow: 5px 4px 8px 1px rgba(0, 0, 0, 0.21);
 }
 
-
 .blue { /* changes the blog entry background color */
     background-color: #4e6978;
 }
 
 .pink {  /* changes the blog entry background color */
-    background-color: #98A7AC; /* grey blue */
+    background-color: #a3b0b5; /* grey blue */
 }
-
 
 p {
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 20px;
     padding-bottom: 40px;
-    text-align: justify;
-    font-size: 18px;
-}
-
-.about-me p{
-    padding-left: 40px;
-    padding-right: 40px;
     text-align: justify;
     font-size: 18px;
 }
@@ -110,12 +124,6 @@ h1 {
 
 h2 {
     font-size: 30px;
-}
-
-.month {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-family: 'Nobile', sans-serif;
 }
 
 .info-heading {
@@ -144,23 +152,19 @@ h2 {
     vertical-align: middle;
 }
 
-.col-blue {
+.col-blue { /* colour of post title*/
     color: #4e6978;
 }
 
-.col-pink{
-    color: #98A7AC; /* pink */
+.col-pink{ /* colour of post title*/
+    color: #a3b0b5;
 }
 
-#my-image {
-    max-width: 30vw;
-    height: auto;
-}
-
+/* Entry images */
 .entry-image {
     padding-top: 30px;
     align-self: center;
-    width: 60vw;
+    width: 50vw;
     height: auto;
     overflow: hidden;
 }
