@@ -1,4 +1,4 @@
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 1300px){
 body {
 	margin: 0;
 	padding: 0;
@@ -188,6 +188,10 @@ h2 {
 }
 
 }
+
+/* @media only screen and (max-width: 1300px & min-width: 600px){
+
+} */
 
 /* Mobile screens */
 @media only screen and (max-width: 600px) {
