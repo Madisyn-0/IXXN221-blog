@@ -9,8 +9,6 @@
     <body>
         <div class="container">
 
-            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
             <div class="top-nav">
                 <a href="index.html">Home</a>
                 <a href="reflection.html">Reflection</a>
@@ -20,18 +18,31 @@
                 <h1>Reflections</h1>
             </section>
 
-            <div class="month-nav">
+            <!-- <div class="month-nav">
                 <a href="#one">July</a>
                 <a href="#two">August</a>
                 <a href="#three">September</a>
                 <a href="#four">October</a>
+            </div> -->
+
+            <div class="month-nav">
+                <button onclick="changeMode()" class="mode-button light">July</button>
+                <button onclick="changeMode()" class="mode-button light">August</button>
+                <button onclick="changeMode()" class="mode-button light">September</button>
+                <button onclick="changeMode()" class="mode-button light">October</button>
             </div>
+
+            
+
+        <div class="screen">
+
+            <div id="july" class="julyM">
 
             <div class="month">
                 <h2 id="one">July</h2>
             </div>
-
-            <div class="blog-entry blue">
+            
+            <div class="blog-entry blue julyM">
                 <div class="info-heading">
                     <h3 class="title col-light">First Micro-Assignment </h3>
                     <h3 class="date">Date: Tuesday 21st July 2020</h3>
@@ -44,7 +55,7 @@
                 </div>
             </div>
 
-            <div class="blog-entry light">
+            <div class="blog-entry light julyM">
                 <div class="info-heading">
                     <h3 class="title col-dark">Creating blog</h3>
                     <h3 class="date">Date posted: Thursday 23rd July 2020</h3>
@@ -58,7 +69,7 @@
             </div>
 
 
-            <div class="blog-entry2 blue">
+            <div class="blog-entry2 blue julyM">
                 <div class="info-heading">
                     <h3 class="title col-light">Flexbox</h3>
                     <h3 class="date">Date posted: Tuesday 28th July 2020</h3>
@@ -78,7 +89,7 @@
                 </div>
             </div>
 
-            <div class="blog-entry light">
+            <div class="blog-entry light julyM">
                 <div class="info-heading">
                     <h3 class="title col-dark">Responsive Wireframes</h3>
                     <h3 class="date">Date posted: Thursday 30th July 2020</h3>
@@ -90,12 +101,14 @@
                     <p>In today's class, I focused on creating wireframes for the mobile and tablet view of my blog. As my blog will be responsive, I needed to plan what the different page sizes would look like. Responsiveness is an important aspect to consider as it allows people who may be viewing my blog to use different devices and still receive the designed output I have created. </p>
                 </div>
             </div>
+        </div>
+        </div>
 
-            <div class="month">
+            <div class="month all">
                 <h2 id="two">August</h2>
             </div>
 
-            <div class="blog-entry blue">
+            <div class="blog-entry blue all">
                 <div class="info-heading">
                     <h3 class="title col-light">Assignment 1 progress</h3>
                     <h3 class="date">Date posted: Tuesday 4th August 2020</h3>
@@ -108,7 +121,7 @@
                 </div>
             </div>
 
-            <div class="blog-entry2 light">
+            <div class="blog-entry2 light all">
                 <div class="info-heading">
                     <h3 class="title col-dark">Grid tutorial</h3>
                     <h3 class="date">Date posted: Thursday 6th August 2020</h3>
@@ -128,7 +141,7 @@
                 </div>
             </div>
 
-            <div class="blog-entry2 blue">
+            <div class="blog-entry2 blue all">
                 <div class="info-heading">
                     <h3 class="title col-light">JavaScript introduction</h3>
                     <h3 class="date">Date posted: Tuesday 11th August 2020</h3>
@@ -148,7 +161,7 @@
                 </div>
             </div>
 
-            <div class="blog-entry2 light">
+            <div class="blog-entry2 light all">
                 <div class="info-heading">
                     <h3 class="title col-dark">Darkmode tutorial</h3>
                     <h3 class="date">Date posted: Thursday 13th August 2020</h3>
@@ -168,11 +181,11 @@
                 </div>
             </div>
 
-            <div class="month">
+            <div class="month all">
                 <h2 id="three">September</h2>
             </div>
 
-            <div class="blog-entry blue">
+            <div class="blog-entry blue all">
                 <div class="info-heading">
                     <h3 class="title col-light">Assignment 3 Group work</h3>
                     <h3 class="date">Date posted: Tuesday 1st September 2020</h3>
