@@ -18,44 +18,45 @@
                 <h1>Reflections</h1>
             </section>
 
-            <!-- <div class="month-nav">
+            <div class="month-nav">
+                <a href="">Show all</a>
                 <a href="#one">July</a>
                 <a href="#two">August</a>
                 <a href="#three">September</a>
                 <a href="#four">October</a>
-            </div> -->
-
-            <div class="month-nav">
-                <button onclick="changeMode()" class="mode-button light">July</button>
-                <button onclick="changeMode()" class="mode-button light">August</button>
-                <button onclick="changeMode()" class="mode-button light">September</button>
-                <button onclick="changeMode()" class="mode-button light">October</button>
             </div>
 
-            
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('july')">July</button>
+                <button class="btn" onclick="filterSelection('august')">August</button>
+                <button class="btn" onclick="filterSelection('september')">September</button>
+                <button class="btn" onclick="filterSelection('october')">October</button>
+            </div>
 
-        <div class="screen">
-
-            <div id="july" class="julyM">
+        <div class="entry-wrapper">
 
             <div class="month">
                 <h2 id="one">July</h2>
             </div>
             
-            <div class="blog-entry blue julyM">
-                <div class="info-heading">
-                    <h3 class="title col-light">First Micro-Assignment </h3>
-                    <h3 class="date">Date: Tuesday 21st July 2020</h3>
-                </div>
-                <div>
-                    <img class="entry-image" src="img/ma1 page.jpg" alt="Micro-Assignment">
-                </div>
-                <div class="text">
-                    <p>For the first micro-assignment, I chose the home page of the KidsCan website to emulate. It was a fairly straightforward page and I only emulated the top half of the page. I found this MA to be very helpful in refreshing my prior knowledge of HTML and CSS and I found that I also had a chance to explore aligning multiple images which I had not done before. I struggled the most with aligning elements and in particular images. I was able to make a single image centre but I could not get the row of images to start in the centre. I also had trouble getting the text in the footer to format correctly.</p>
+            <div class="filterDiv july">
+                <div class="blog-entry blue">
+                    <div class="info-heading">
+                        <h3 class="title col-light">First Micro-Assignment </h3>
+                        <h3 class="date">Date: Tuesday 21st July 2020</h3>
+                    </div>
+                    <div>
+                        <img class="entry-image" src="img/ma1 page.jpg" alt="Micro-Assignment">
+                    </div>
+                    <div class="text">
+                        <p>For the first micro-assignment, I chose the home page of the KidsCan website to emulate. It was a fairly straightforward page and I only emulated the top half of the page. I found this MA to be very helpful in refreshing my prior knowledge of HTML and CSS and I found that I also had a chance to explore aligning multiple images which I had not done before. I struggled the most with aligning elements and in particular images. I was able to make a single image centre but I could not get the row of images to start in the centre. I also had trouble getting the text in the footer to format correctly.</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="blog-entry light julyM">
+            <div class="filterDiv july">
+            <div class="blog-entry light">
                 <div class="info-heading">
                     <h3 class="title col-dark">Creating blog</h3>
                     <h3 class="date">Date posted: Thursday 23rd July 2020</h3>
@@ -67,9 +68,9 @@
                     <p>I started making the main elements of my blog today, following the wireframes that I created on Figma. So far I have created the nav and linked the two pages together. I have added the main title to each page to make it easier to distinguish which page you are currently on. My next steps would be to continue to develop my wireframes to include a couple of different templates for different blog posts. This will allow me to have a more flexible design to work with when I have different sized pictures and different blocks of text.</p>
                 </div>
             </div>
+            </div>
 
-
-            <div class="blog-entry2 blue julyM">
+            <div class="blog-entry2 blue">
                 <div class="info-heading">
                     <h3 class="title col-light">Flexbox</h3>
                     <h3 class="date">Date posted: Tuesday 28th July 2020</h3>
@@ -89,7 +90,7 @@
                 </div>
             </div>
 
-            <div class="blog-entry light julyM">
+            <div class="blog-entry light">
                 <div class="info-heading">
                     <h3 class="title col-dark">Responsive Wireframes</h3>
                     <h3 class="date">Date posted: Thursday 30th July 2020</h3>
@@ -101,14 +102,12 @@
                     <p>In today's class, I focused on creating wireframes for the mobile and tablet view of my blog. As my blog will be responsive, I needed to plan what the different page sizes would look like. Responsiveness is an important aspect to consider as it allows people who may be viewing my blog to use different devices and still receive the designed output I have created. </p>
                 </div>
             </div>
-        </div>
-        </div>
 
-            <div class="month all">
+            <div class="month">
                 <h2 id="two">August</h2>
             </div>
 
-            <div class="blog-entry blue all">
+            <div class="blog-entry blue">
                 <div class="info-heading">
                     <h3 class="title col-light">Assignment 1 progress</h3>
                     <h3 class="date">Date posted: Tuesday 4th August 2020</h3>
@@ -121,7 +120,7 @@
                 </div>
             </div>
 
-            <div class="blog-entry2 light all">
+            <div class="blog-entry2 light">
                 <div class="info-heading">
                     <h3 class="title col-dark">Grid tutorial</h3>
                     <h3 class="date">Date posted: Thursday 6th August 2020</h3>
@@ -141,7 +140,7 @@
                 </div>
             </div>
 
-            <div class="blog-entry2 blue all">
+            <div class="blog-entry2 blue">
                 <div class="info-heading">
                     <h3 class="title col-light">JavaScript introduction</h3>
                     <h3 class="date">Date posted: Tuesday 11th August 2020</h3>
@@ -161,7 +160,7 @@
                 </div>
             </div>
 
-            <div class="blog-entry2 light all">
+            <div class="blog-entry2 light">
                 <div class="info-heading">
                     <h3 class="title col-dark">Darkmode tutorial</h3>
                     <h3 class="date">Date posted: Thursday 13th August 2020</h3>
@@ -181,11 +180,11 @@
                 </div>
             </div>
 
-            <div class="month all">
+            <div class="month">
                 <h2 id="three">September</h2>
             </div>
 
-            <div class="blog-entry blue all">
+            <div class="blog-entry blue">
                 <div class="info-heading">
                     <h3 class="title col-light">Assignment 3 Group work</h3>
                     <h3 class="date">Date posted: Tuesday 1st September 2020</h3>
@@ -269,6 +268,8 @@
                     <p>As a group we came up with some tasks for our users to complete when testing our prototype. We wanted to test out our main navigation points and our filtering and search functions. These are key aspects of our website that we need to get right to create a website that user can actually interact with. We hope to receive feedback and insights that will aid us in improving our website and ensuring users enjoy the experience. We also wrote a few questions to ask the users during testing to gain more feedback on the design and experience of our prototype to ensure the content is clearly communicated and relevant. User testing will be a valuable step in our design process as it will allow us to see how a user interacts with our site and identify what parts of the interface confuse people and work to fix them. </p>
                 </div>
             </div>
+
+        </div>
 
         </div>
     </body>
