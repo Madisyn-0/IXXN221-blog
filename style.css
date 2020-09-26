@@ -222,7 +222,7 @@ h2 {
 
 .grid-container {
     display: inline-grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
 }
 
 .grid-item{
@@ -302,7 +302,6 @@ body {
     border: none;
     outline: none;
     cursor: pointer;
-}
 }
 
 .month-nav a:hover {
