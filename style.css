@@ -39,13 +39,14 @@ body {
 }
 
 /* Months */
-.month-nav {
+.month-nav, #myBtnContainer {
     background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 60px;
     padding-left: 60px;
     padding-right: 60px;
+    padding-bottom: 40px;
 }
 /* .mode-button {
     position: fixed;
@@ -53,9 +54,7 @@ body {
     left: 20px;
 } */
 
-
-
-.month-nav a, .mode-button {
+.month-nav a, .mode-button, .btn {
     background-color: #CDDAD8;
     color: #444c57;
     text-align: center;
@@ -66,9 +65,11 @@ body {
     border-radius: 20px;
 
     border: none;
+    outline: none;
+    cursor: pointer;
 }
 
-.month-nav a:hover, .mode-button:hover {
+.month-nav a:hover, .mode-button:hover, .btn:hover {
     color: white;
 }
 
@@ -79,6 +80,27 @@ body {
     color: #444c57;
 }
 
+.entry-wrapper {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.filterDiv {
+    display: none;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+.btn.active {
+    background-color: #444c57;
+    color: white;
+    display: block;
+  }
+
+
 /* Main titles */
 .page-title, .name h2 {
     color:  #4e6978; /* pink */
@@ -87,14 +109,14 @@ body {
 
 /* Home page */
 .about-me p{
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
     text-align: justify;
     font-size: 18px;
 }
 
 #my-image {
-    max-width: 30vw;
+    max-width: 20vw;
     height: auto;
     padding-bottom: 20px;
 }
@@ -120,8 +142,8 @@ body {
 }
 
 p {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
     padding-top: 20px;
     padding-bottom: 40px;
     text-align: justify;
@@ -172,7 +194,7 @@ h2 {
 .entry-image {
     padding-top: 30px;
     align-self: center;
-    width: 50vw;
+    width: 30vw;
     height: auto;
     overflow: hidden;
 }
@@ -180,7 +202,7 @@ h2 {
 .entry-image2{
     padding-top: 30px;
     box-sizing: border-box;
-    width: 80%;
+    width: 70%;
     height: auto;
     overflow: hidden;
 }
@@ -188,7 +210,6 @@ h2 {
 .grid-container {
     display: inline-grid;
     grid-template-columns: auto auto;
-    padding: 10px;
 }
 
 .grid-item{
