@@ -43,24 +43,19 @@ body {
     background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-column-gap: 60px;
+    grid-column-gap: 4%;
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 40px;
 }
-/* .mode-button {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-} */
 
-.month-nav a, .mode-button, .btn {
+.month-nav a, .btn {
     background-color: #CDDAD8;
     color: #444c57;
     text-align: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    font-size: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 16px;
     text-decoration: none;
     border-radius: 20px;
 
@@ -69,7 +64,7 @@ body {
     cursor: pointer;
 }
 
-.month-nav a:hover, .mode-button:hover, .btn:hover {
+.month-nav a:hover, .btn:hover {
     color: white;
 }
 
@@ -94,15 +89,34 @@ body {
     display: block;
 }
 
-.btn.active {
+/* .btn.active {
     background-color: #444c57;
     color: white;
     display: block;
-  }
+} */
 
+/* Back to top button */
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #a3b0b5; /* grey blue */
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 4px;
+}
+  
+#topBtn:hover {
+    background-color: #4e6978; /*dark blue*/
+}
 
 /* Main titles */
-.page-title, .name h2 {
+.page-title, .name{
     color:  #4e6978; /* pink */
     font-family: 'Nobile', sans-serif;
 }
@@ -116,9 +130,8 @@ body {
 }
 
 #my-image {
-    max-width: 20vw;
+    max-width: 25vw;
     height: auto;
-    padding-bottom: 20px;
 }
 
 /* Blog Entries */
@@ -134,14 +147,14 @@ body {
 }
 
 .blue { /* changes the blog entry background color */
-    background-color: #4e6978;
+    background-color: #4e6978; /*dark blue*/
 }
 
 .light {  /* changes the blog entry background color */
     background-color: #a3b0b5; /* grey blue */
 }
 
-p {
+.blog-entry p, .blog-entry2 p {
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 20px;
@@ -156,7 +169,7 @@ h1 {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 23px;
 }
 
 .info-heading {
@@ -268,23 +281,28 @@ body {
 }
 
 /* Months */
-.month-nav {
+.month-nav, #myBtnContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 3%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
 
-.month-nav a {
+.month-nav a, .btn {
     background-color: #CDDAD8;
     color: #444c57;
     text-align: center;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    font-size: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 13px;
     text-decoration: none;
     border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
 }
 
 .month-nav a:hover {
@@ -298,8 +316,42 @@ body {
     color: #444c57;
 }
 
+.entry-wrapper {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.filterDiv {
+    display: none;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Back to top button */
+#topBtn {
+    position: fixed;
+    bottom: 16px;
+    right: 26px;
+    z-index: 99;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background-color: #a3b0b5; /* grey blue */
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+}
+  
+#topBtn:hover {
+    background-color: #4e6978; /*dark blue*/
+}
+
 /* Main titles */
-.page-title, .name h2 {
+.page-title, .name {
     color:  #4e6978; /* pink */
     font-family: 'Nobile', sans-serif;
 }
@@ -353,7 +405,7 @@ h1 {
 }
 
 h2 {
-    font-size: 23px;
+    font-size: 20px;
 }
 
 .info-heading {

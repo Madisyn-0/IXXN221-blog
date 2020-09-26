@@ -1,3 +1,4 @@
+/* month filtering */
 filterSelection("all")
 function filterSelection(c) {
   var x, i;
@@ -44,4 +45,13 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
+}
+
+
+
+/* back to top button */
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
