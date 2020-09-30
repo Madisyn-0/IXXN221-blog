@@ -35,7 +35,6 @@ body {
 
 .top-nav a:hover {
 	color: white;
-	text-decoration: underline; /* Hover styles to let people know they can click it */
 }
 
 /* Months */
@@ -121,24 +120,43 @@ body {
     font-family: 'Nobile', sans-serif;
 }
 
+
 /* Home page */
+.name {
+    padding-bottom: 20px;
+    text-align: left;
+}
+.about-me {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    /* background-color: #CDDAD8; */
+    column-gap: 20px;
+}
+
 .about-me p{
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 0px;
+    padding-right: 40px;
     text-align: justify;
     font-size: 18px;
 }
 
 #my-image {
+    padding-top: 20px;
+    padding-bottom: 30px;
     max-width: 25vw;
-    height: auto;
+    max-height: max-content;
+    padding-left: 20px;
+    justify-self: center;
 }
 
 /* Blog Entries */
 .blog-entry, .blog-entry2{
     align-items: center;
     padding-top: 30px;
-    width: 60vw;
+    width: 50vw;
     margin: 0 auto;
     color: white;
     -webkit-box-shadow: 5px 4px 8px 1px rgba(0, 0, 0, 0.21);
@@ -160,12 +178,12 @@ body {
     padding-top: 20px;
     padding-bottom: 40px;
     text-align: justify;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 h1 {
+    font-size: 40px;
     padding-bottom: 10px;
-    font-size: 60px;
 }
 
 h2 {
@@ -181,17 +199,16 @@ h2 {
     justify-content: space-between;
     padding-left: 30px;
     padding-right: 30px;
-
 }
 
 .title {
-    font-size: 25px;
+    font-size: 23px;
     font-family: 'Nobile', sans-serif;
 }
 
 .date {
     position: relative;
-    top: 18px;
+    top: 10px;
     font-size: 15px;
 }
 
