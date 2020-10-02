@@ -1,5 +1,8 @@
-/* month filtering */
+// Code credit: https://www.w3schools.com/howto/howto_js_filter_elements.asp
+
+// month filtering
 filterSelection("all")
+
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");
@@ -9,6 +12,10 @@ function filterSelection(c) {
     w3RemoveClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
   }
+
+  // scroll to top of posts when clicked
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 
 // Show filtered elements

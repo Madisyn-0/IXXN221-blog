@@ -15,6 +15,7 @@
         <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
 
         <div class="container">
+            <div class="sticky-content">
 
             <div class="top-nav">
                 <a href="index.html">HOME</a>
@@ -25,27 +26,16 @@
                 <h1>Reflections</h1>
             </section>
 
-            <!-- <div class="month-nav">
-                <a href="">Show all</a>
-                <a href="#one">July</a>
-                <a href="#two">August</a>
-                <a href="#three">September</a>
-                <a href="#four">October</a>
-            </div> -->
-
             <div id="myBtnContainer">
-                <button class="btn" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
                 <button class="btn" onclick="filterSelection('july')">July</button>
                 <button class="btn" onclick="filterSelection('august')">August</button>
                 <button class="btn" onclick="filterSelection('september')">September</button>
                 <button class="btn" onclick="filterSelection('october')">October</button>
             </div>
+        </div>
 
         <div class="entry-wrapper">
-
-            <!-- <div class="month">
-                <h2 id="one">July</h2>
-            </div> -->
             
             <div class="filterDiv july">
                 <div class="blog-entry blue">
@@ -114,11 +104,7 @@
             </div>
         </div>
 
-            <!-- <div class="month">
-                <h2 id="two">August</h2>
-            </div> -->
-
-            <div class="filterDiv august">
+        <div class="filterDiv august">
             <div class="blog-entry blue">
                 <div class="info-heading">
                     <h3 class="title col-light">Assignment 1 progress</h3>
@@ -199,11 +185,7 @@
             </div>
         </div>
 
-            <!-- <div class="month">
-                <h2 id="three">September</h2>
-            </div> -->
-
-            <div class="filterDiv september">
+        <div class="filterDiv september">
             <div class="blog-entry blue">
                 <div class="info-heading">
                     <h3 class="title col-light">Assignment 3 Group work</h3>
@@ -326,6 +308,21 @@
                 </div>
                 <div class="text">
                     <p>Today my group worked on incorporating the feedback that we received from the presentations into our prototype. We have expanded out our editors page to provide more information about each editor and make it a more important page as it is a main part of our website. We also changed our navigation layout as we found that the current buttons we were using did not respond well to a smaller page size. We now have a horizontal nav at the top of the page with buttons on either corner to navigate to the editors page and nominations page. The feedback we have received has allowed us to continue to improve and enhance our prototypes interactivity and overall design. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="filterDiv october">
+            <div class="blog-entry blue">
+                <div class="info-heading">
+                    <h3 class="title col-light">Prototype refinement</h3>
+                    <h3 class="date">Date posted: Thursday 1st October 2020</h3>
+                </div>
+                <div>
+                    <img class="entry-image" src="img/blue_INDEX.png" alt="Assignment 2 Prototype">
+                </div>
+                <div class="text">
+                    <p>Over the past few days we have implemented more of the feedback we received on Tuesday and created the hover states for our buttons, refined our home page and icons and reworked the colour scheme to ensure readability.  Our original orange colour did not meet the contrast ratio test as the white text on orange background was not very readable. To fix this we decided to bring in a navy blue and use the orange as an accent colour. While this new colour scheme differs from our original, it is important that the text is always readable. With the final refinements of our prototype coming together, I created a GitHub repository for our group to start working on coding our website. GitHub allows us to work collaboratively and produce our website quicker as our group can work on the code separately on branches and push it up to the same repository.</p>
                 </div>
             </div>
         </div>
