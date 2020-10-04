@@ -43,6 +43,10 @@ body {
 	color: white;
 }
 
+.mobile-nav {
+    display: none;
+}
+
 /* Months */
 #myBtnContainer {
     background-color: white;
@@ -295,6 +299,65 @@ body {
     position: sticky; top: 0px;
 }
 
+.mobile-nav {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.page-title {
+    align-self: center;
+}
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    justify-content: right;
+    float: right;
+    /* width: 20vw; */
+    height: max-content;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav.btn2 {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .btn2.icon {
+    background: black;
+    display: block;
+    /* position: absolute;
+    right: 0;
+    top: 0; */
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+
+
 /* nav */
 .top-nav{
     position: relative;
@@ -319,13 +382,14 @@ body {
 
 /* Months */
 #myBtnContainer {
-    background-color: white;
+    /* background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 3%;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 10px; */
+    display: none;
 }
 
 .btn {
