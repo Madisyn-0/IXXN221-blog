@@ -4,7 +4,6 @@ body {
 	margin: 0;
 	padding: 0;
     background-color: #DEE2E1;
-    font-family: Arial, Helvetica, sans-serif;
     font-family: 'Lato', sans-serif;
     text-align: center;
     color: #444c57;
@@ -21,12 +20,13 @@ body {
     background-color: white;
     position: sticky; top: 0px;
 }
+
 /* nav */
 .top-nav{
     position: relative;
     top: -20px;
     background-color: #CDDAD8; /* light blue */
-    padding:30px;
+    padding:20px;
     align-items: center;
 }
 
@@ -34,10 +34,9 @@ body {
     color: #444c57;
     padding-left: 30px;
     padding-right: 30px;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
-    font-family: 'Julius Sans One', sans-serif;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .top-nav a:hover {
@@ -75,13 +74,6 @@ body {
     color: white;
 }
 
-.month {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-family: 'Nobile', sans-serif;
-    color: #444c57;
-}
-
 .entry-wrapper {
     margin-top: 20px;
     overflow: hidden;
@@ -96,11 +88,11 @@ body {
     display: block;
 }
 
-.btn.active {
+/* .btn.active {
     background-color: #4e6978;
     color: white;
     display: block;
-}
+} */
 
 /* Back to top button */
 #topBtn {
@@ -157,7 +149,7 @@ h1 {
 
 .about-me p{
     padding-right: 40px;
-    text-align: justify;
+    text-align: left;
     font-size: 18px;
 }
 
@@ -247,7 +239,7 @@ h1 {
 }
 
 .entry-image:hover {
-    width: 32vw;
+    width: 31vw;
 }
 
 .entry-image2{
@@ -280,16 +272,12 @@ h1 {
 
 /* Mobile screens */
 @media only screen and (max-width: 600px) {
- /* .blog-entry2 {
-        display: grid;
-        grid-template-columns: 1fr;
-} */
 
 body {
 	margin: 0;
 	padding: 0;
     background-color: #DEE2E1;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lato', sans-serif;
     text-align: center;
     color: #444c57;
 }
@@ -297,9 +285,14 @@ body {
 .container {
     padding-top: 20px;
     padding-bottom: 30px;
-    width: 80vw;
+    width: 100vw;
     margin: auto;
     background-color: white;
+}
+
+.sticky-content {
+    background-color: white;
+    position: sticky; top: 0px;
 }
 
 /* nav */
@@ -308,6 +301,7 @@ body {
     top: -20px;
     background-color: #CDDAD8; /* light blue */
     padding: 20px;
+    align-items: center;
 }
 
 .top-nav a{
@@ -316,24 +310,25 @@ body {
     padding-right: 20px;
     font-size: 15px;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .top-nav a:hover {
 	color: white;
-	text-decoration: underline; /* Hover styles to let people know they can click it */
 }
 
 /* Months */
-.month-nav, #myBtnContainer {
+#myBtnContainer {
+    background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 3%;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
-.month-nav a, .btn {
+.btn {
     background-color: #CDDAD8;
     color: #444c57;
     text-align: center;
@@ -345,17 +340,11 @@ body {
     border: none;
     outline: none;
     cursor: pointer;
+    font-family: 'Lato', sans-serif;
 }
 
-.month-nav a:hover {
+.btn:hover {
     color: white;
-}
-
-.month {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-family: 'Nobile', sans-serif;
-    color: #444c57;
 }
 
 .entry-wrapper {
@@ -376,15 +365,15 @@ body {
 #topBtn {
     position: fixed;
     bottom: 16px;
-    right: 26px;
+    right: 13px;
     z-index: 99;
-    font-size: 14px;
+    font-size: 13px;
     border: none;
     outline: none;
     background-color: #a3b0b5; /* grey blue */
     color: white;
     cursor: pointer;
-    padding: 10px;
+    padding: 8px;
     border-radius: 4px;
 }
   
@@ -393,30 +382,49 @@ body {
 }
 
 /* Main titles */
+h1 {
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin: 10px;
+    padding-bottom: 20px;
+}
+
 .page-title, .name {
-    color:  #4e6978; /* pink */
-    font-family: 'Nobile', sans-serif;
+    color:  #4e6978; /*dark blue*/
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Home page */
+.name {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.about-me {
+    grid-template-rows: 1fr 1fr;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: space-evenly;
+}
+
 .about-me p{
-    padding-left: 40px;
-    padding-right: 40px;
-    text-align: justify;
+    text-align: left;
     font-size: 15px;
 }
 
 #my-image {
-    max-width: 30vw;
-    height: auto;
-    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    max-width: 40vw;
 }
 
 /* Blog Entries */
 .blog-entry, .blog-entry2{
     align-items: center;
     padding-top: 30px;
-    width: 60vw;
+    width: 80vw;
     margin: 0 auto;
     color: white;
     -webkit-box-shadow: 5px 4px 8px 1px rgba(0, 0, 0, 0.21);
@@ -432,22 +440,13 @@ body {
     background-color: #a3b0b5; /* grey blue */
 }
 
-p {
+.blog-entry p, .blog-entry2 p {
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 0px;
+    padding-bottom: 20px;
     text-align: justify;
-    font-size: 15px;
-}
-
-h1 {
-    padding-bottom: 10px;
-    font-size: 37px;
-}
-
-h2 {
-    font-size: 20px;
+    font-size: 13px;
 }
 
 .info-heading {
@@ -459,18 +458,22 @@ h2 {
     justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px;
+    align-items: center;
 
 }
 
 .title {
     font-size: 18px;
-    font-family: 'Nobile', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 .date {
-    position: relative;
-    top: 16px;
     font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
 .col-dark { /* colour of post title*/
@@ -488,14 +491,24 @@ h2 {
     width: 50vw;
     height: auto;
     overflow: hidden;
+    transition: 0.5s;
+}
+
+.entry-image:hover {
+    width: 51vw;
 }
 
 .entry-image2{
     padding-top: 30px;
     box-sizing: border-box;
-    width: 80%;
+    width: 70%;
     height: auto;
     overflow: hidden;
+    transition: 0.5s;
+}
+
+.entry-image2:hover {
+    width: 72%;
 }
 
 .grid-container{
