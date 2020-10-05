@@ -1,11 +1,12 @@
 // Code credit: https://www.w3schools.com/howto/howto_js_filter_elements.asp
 
-
-window.onload = function(){ filterSelection("all"); }
-
+window.onload = function() {
+  filterSelection("all");
+  buttonSelector();
+};
 
 // month filtering
-filterSelection("all")
+filterSelection("all");
 
 function filterSelection(c) {
   var x, i;
@@ -48,22 +49,25 @@ function w3RemoveClass(element, name) {
 }
 
 // Add active class to the current control button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
+function buttonSelector(){
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+      console.log("clicked");
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
 }
 
 // window.onload = function() {
 //   filterSelection("all");
 // };
 
-// window.addEventListener ? 
-// window.addEventListener("load",filterSelection("all"),false) : 
+// window.addEventListener ?
+// window.addEventListener("load",filterSelection("all"),false) :
 // window.attachEvent && window.attachEvent("onload",filterSelection("all"));
 
 // window.onload = filterSelection("all");
