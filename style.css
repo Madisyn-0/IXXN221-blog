@@ -91,11 +91,11 @@ body {
     display: block;
 }
 
-/* .btn.active {
+.btn.active {
     background-color: #4e6978;
     color: white;
     display: block;
-} */
+}
 
 /* Main titles */
 h1 {

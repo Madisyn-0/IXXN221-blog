@@ -1,5 +1,9 @@
 // Code credit: https://www.w3schools.com/howto/howto_js_filter_elements.asp
 
+
+window.onload = function(){ filterSelection("all"); }
+
+
 // month filtering
 filterSelection("all")
 
@@ -53,3 +57,13 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+// window.onload = function() {
+//   filterSelection("all");
+// };
+
+// window.addEventListener ? 
+// window.addEventListener("load",filterSelection("all"),false) : 
+// window.attachEvent && window.attachEvent("onload",filterSelection("all"));
+
+// window.onload = filterSelection("all");
