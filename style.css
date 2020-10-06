@@ -315,9 +315,9 @@ body {
 }
 
 /* Months */
-.desktop-months {
+/* .desktop-months {
     display: none;
-}
+} */
 #myBtnContainer {
     background-color: white;
     display: grid;
@@ -493,14 +493,14 @@ h1 {
 .entry-image2{
     padding-top: 30px;
     box-sizing: border-box;
-    width: 70%;
+    width: 60%;
     height: auto;
     overflow: hidden;
     transition: 0.5s;
 }
 
 .entry-image2:hover {
-    width: 72%;
+    width: 62%;
 }
 
 .grid-container{

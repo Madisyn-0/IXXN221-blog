@@ -61,13 +61,3 @@ function buttonSelector(){
     });
   }
 }
-
-// window.onload = function() {
-//   filterSelection("all");
-// };
-
-// window.addEventListener ?
-// window.addEventListener("load",filterSelection("all"),false) :
-// window.attachEvent && window.attachEvent("onload",filterSelection("all"));
-
-// window.onload = filterSelection("all");
