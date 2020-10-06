@@ -167,6 +167,8 @@ h1 {
 
 .light {  /* changes the blog entry background color */
     background-color: #a3b0b5; /* grey blue */
+    background-color: #CDDAD8; /* light blue */
+    color: #444c57;
 }
 
 .blog-entry p, .blog-entry2 p {
@@ -207,14 +209,6 @@ h1 {
     font-size: 14px;
     font-weight: 400;
     text-align: right;
-}
-
-.col-dark { /* colour of post title*/
-    color: #4e6978;
-}
-
-.col-light{ /* colour of post title*/
-    color: #a3b0b5;
 }
 
 /* Entry images */
