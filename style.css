@@ -10,7 +10,7 @@ body {
 
 .container {
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     width: 80vw;
     margin: auto;
     background-color: white;
@@ -44,10 +44,6 @@ body {
 }
 
 /* Months */
-.mobile-months {
-    display: none;
-}
-
 #myBtnContainer {
     background-color: white;
     display: grid;
@@ -59,23 +55,20 @@ body {
 }
 
 .btn {
-    background-color: #CDDAD8;
+    background-color: #CDDAD8; /* light blue */
     color: #444c57;
-    text-align: center;
     padding-bottom: 10px;
     padding-top: 10px;
     font-size: 16px;
     text-decoration: none;
     border-radius: 20px;
-
     border: none;
     outline: none;
     cursor: pointer;
-    font-family: 'Lato', sans-serif;
 }
 
 .btn:hover {
-    background-color: #4e6978;
+    background-color: #4e6978; /*dark blue*/
     color: white;
     font-weight: 500;
 }
@@ -85,17 +78,17 @@ body {
     overflow: hidden;
 }
 
+/* Javascript filtering */
 .filterDiv {
     display: none;
 }
 
-/* The "show" class is added to the filtered elements */
 .show {
     display: block;
 }
 
-.active {
-    background-color: #4e6978;
+.active { /* Selected button for filtering */
+    background-color: #4e6978; /*dark blue*/
     color: white;
     display: block;
     font-weight: 500;
@@ -126,11 +119,9 @@ h1 {
 .about-me {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-self: center;
     margin-left: 80px;
     margin-right: 80px;
     column-gap: 20px;
-    align-items: center;
 }
 
 .about-me p{
@@ -145,7 +136,6 @@ h1 {
     max-width: 25vw;
     max-height: max-content;
     padding-left: 20px;
-    justify-self: center;
     align-self: center;
 }
 
@@ -166,9 +156,8 @@ h1 {
 }
 
 .light {  /* changes the blog entry background color */
-    background-color: #a3b0b5; /* grey blue */
     background-color: #CDDAD8; /* light blue */
-    color: #444c57;
+    color: #444c57; 
 }
 
 .blog-entry p, .blog-entry2 p {
@@ -181,7 +170,6 @@ h1 {
     margin-bottom: 30px;
     margin-top: 20px;
 }
-
 
 .info-heading {
     display: flex;
@@ -264,7 +252,7 @@ body {
 
 .container {
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     width: 100vw;
     margin: auto;
     background-color: white;
@@ -273,17 +261,6 @@ body {
 .sticky-content {
     background-color: white;
     position: sticky; top: 0px;
-}
-
-.mobile-nav {
-    display: grid;
-    grid-template-columns: 70% 30%;
-    column-gap: 20px;
-    align-items: center;
-}
-
-.page-title {
-    align-self: center;
 }
 
 /* nav */
@@ -309,9 +286,6 @@ body {
 }
 
 /* Months */
-/* .desktop-months {
-    display: none;
-} */
 #myBtnContainer {
     background-color: white;
     display: grid;
@@ -323,9 +297,8 @@ body {
 }
 
 .btn {
-    background-color: #CDDAD8;
+    background-color: #CDDAD8; /* light blue */
     color: #444c57;
-    text-align: center;
     padding-bottom: 10px;
     padding-top: 10px;
     font-size: 13px;
@@ -334,7 +307,6 @@ body {
     border: none;
     outline: none;
     cursor: pointer;
-    font-family: 'Lato', sans-serif;
 }
 
 .btn:hover {
@@ -348,16 +320,16 @@ body {
     overflow: hidden;
 }
 
+/* Javascript filtering */
 .filterDiv {
     display: none;
 }
 
-/* The "show" class is added to the filtered elements */
 .show {
     display: block;
 }
 
-.active {
+.active {  /* Selected button for filtering */
     background-color: #4e6978;
     color: white;
     display: block;
@@ -416,11 +388,12 @@ h1 {
 }
 
 .blue { /* changes the blog entry background color */
-    background-color: #4e6978;
+    background-color: #4e6978; /*dark blue*/
 }
 
 .light {  /* changes the blog entry background color */
-    background-color: #a3b0b5; /* grey blue */
+    background-color: #CDDAD8; /* light blue */
+    color: #444c57; 
 }
 
 .blog-entry p, .blog-entry2 p {
@@ -460,14 +433,6 @@ h1 {
     font-size: 12px;
     font-weight: 400;
     text-align: right;
-}
-
-.col-dark { /* colour of post title*/
-    color: #4e6978;
-}
-
-.col-light{ /* colour of post title*/
-    color: #a3b0b5;
 }
 
 /* Entry images */
